@@ -41,6 +41,7 @@ app.get('/hostel',async(req,res)=>     //api creation
 
 app.post('/hostel',(req,res)=>
 {
+    console.log("Hello hoolers");
     //console.log(req.body);
     //res.send("namaha");
     res.json(req.body);
