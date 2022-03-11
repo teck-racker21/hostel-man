@@ -31,7 +31,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.get('/hostel',async(req,res)=>     //api creation
 {
     
-    console.log('hello World!');
+    console.log('Hello World!');
 
     //res.send("Balaji viyan");
     const hostelList = await hostel.find();
@@ -43,6 +43,7 @@ app.post('/hostel',(req,res)=>
 {
     //console.log(req.body);
     //res.send("namaha");
+    
     res.json(req.body);
     const hostelObj = new hostel(req.body);
     hostelObj.save();
